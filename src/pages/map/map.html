@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-searchbar>
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-row>
+    <ion-item no-lines class="ion-item">
+      <ion-scroll scrollX="true" class="item">
+        <button ion-button icon-only (click)="openModal()">
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="pin" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="pin" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="home" class="scroll-item selectable-icon"></ion-icon>
+        </button>
+      </ion-scroll>
+    </ion-item>
+  </ion-row>
+  
+
+  <ion-fab top right edge>
+    <button ion-fab (click)='movePosition()' >
+       <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+  <div #map id="map"></div>
+</ion-content>
